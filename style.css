@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	font-family: 'SourceSansPro', sans-serif;
+    height: 100vh;
+    width: 939px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+}
+
+.header__inner {
+    display: flex;
+}
+
+.header__left {
+    width: 301px;
+    height: 100px;
+    background: #DDDDDD;
+    margin-right: 19px;
+}
+
+.header__right {
+    width: 621px;
+    height: 100px;
+    background: #DDDDDD;
+}
+
+.header__right-text, .footer__description {
+    font-family: 'HelveticaNeue', sans-serif;
+    padding: 39px 89px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #fff;
+}
+
+.content {
+    right: 0;
+    display: flex;
+    margin-top: 60px;
+    justify-content: flex-end;
+    position: relative;
+}
+
+
+.content__slider {
+    position: absolute;
+    right: 310px;
+    border: 2px solid orange;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 430px;
+}
+
+.content__slider-firstRow, .content__slider-secondRow {
+    display:flex;
+}
+
+.content__image {
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 5px 5px;;
+}
+
+.content__text {
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    z-index: 1;
+}
+
+.content__text-title {
+    font-size: 30px;
+    color: #134880;
+    line-height: 37px;
+    align-items: center;
+    letter-spacing: 0.4px; 
+}
+
+.content__text-description {
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 28px;
+    
+}
+
+.content__arrow {
+    margin: 5px 12px;
+    border-radius: 5px;
+    position: absolute;
+    left: 542px;
+    top: 375px;  
+}
+
+.hide {
+    display:none;
+}
+
+.content__arrow-left:hover img:first-child, .content__arrow-right:hover img:first-child{
+    display: none;
+}
+
+.content__arrow-left:hover img:last-child, .content__arrow-right:hover img:last-child{
+    display: inline-block;
+    object-fit: cover;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.content__arrow-left:hover, .content__arrow-right:hover{
+    cursor: pointer;
+    border-color: #134880;
+}
+
+.content__arrow-left, .content__arrow-right {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+}
+
+.content__arrow-left {
+    margin-bottom: 10px;
+}
+
+.content__image-arrow{
+    object-fit: cover;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+ .footer {
+    width: 100%;
+    height: 100px;
+    background: #DDD;
+    position: sticky;
+    top: 100%;
+}
+
