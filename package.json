@@ -1,0 +1,25 @@
+{
+  "name": "factory-slider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "babel": "babel",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nkristanovic/Factory-slider.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nkristanovic/Factory-slider/issues"
+  },
+  "homepage": "https://github.com/nkristanovic/Factory-slider#readme",
+  "dependencies": {
+    "@babel/cli": "^7.17.0",
+    "@babel/core": "^7.17.2",
+    "@babel/preset-env": "^7.16.11"
+  }
+}

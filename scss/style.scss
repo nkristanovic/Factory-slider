@@ -1,0 +1,137 @@
+@use './variables/variables';
+@use './mixins/mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	font-family: variables.$fontSansPro;
+    height: 100vh;
+    width: 939px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header {
+    height: 100px;
+
+    &__inner {
+        display: flex;
+    }
+
+    &__left {
+        width: 301px;
+        height: 100px;
+        background: variables.$primary-color;
+        margin-right: 19px;
+    }
+
+    &__right {
+        width: 621px;
+        height: 100px;
+        background: variables.$primary-color;
+    }
+
+    &__right-text{
+        font-family: variables.$fontHelvetica;
+        padding: 39px 89px;
+        font-size: 15px;
+        line-height: 18px;
+        color: variables.$text-color;
+    }
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 66% 32%;
+    grid-gap: 19px;
+    margin-top: 60px;
+    position: relative;
+    justify-items: end;
+
+    &__slider{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: 420px;
+        overflow: hidden;
+        align-content: flex-start;
+    }
+
+    &__slider-firstRow {
+        @include mixins.slider;
+    }
+
+    &__slider-secondRow {
+        @include mixins.slider(10px, 30px);
+    }
+
+    &__text {
+        height: 100%;
+        background: variables.$text-color;
+        z-index: 1;
+    }
+
+    &__text-title {
+        font-size: 32px;
+        color: variables.$border-color;
+        line-height: 37px;
+        font-weight: 700;
+        align-items: center;
+        letter-spacing: -0.2px; 
+    }
+
+    &__text-description {
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 26px; 
+        letter-spacing: -0.2px; 
+        font-weight: 400;
+    }
+}
+
+.disabled {
+   pointer-events: none;
+}
+
+.btn {
+    @include mixins.buttons;
+
+    &__left {
+        background-image: url("../Assets/arrow-gray-left.png");
+        margin-bottom: 10px;
+
+        &:hover {
+            background-image: url("../Assets/arrow-blue-left.png");
+        }
+    }
+
+    &__right {
+        background-image: url("../Assets/arrow-gray-right.png");
+
+        &:hover {
+            background-image: url("../Assets/arrow-blue-right.png");
+        }
+    }
+}
+
+.footer {
+    height: 100px;
+    background: variables.$primary-color;
+    position: sticky;
+    top: 100%;
+
+    &__description {
+        font-family: variables.$fontHelvetica;
+        padding: 39px 89px;
+        font-size: 15px;
+        line-height: 18px;
+        color: variables.$text-color;
+    }
+ }
+
+ 
+

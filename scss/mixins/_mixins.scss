@@ -1,0 +1,48 @@
+@use '../variables/variables';
+
+@mixin slider($margin-top: 0, $right: 0) {
+    display:flex;
+    position: relative;
+    align-items: flex-start;
+    margin-top: $margin-top;
+    right: $right;
+    
+    .content__slide{
+        height: 200px;
+    }
+
+    img {
+        object-fit: contain;
+        border-radius: 5px;
+        margin-left: 10px;
+        height: 200px;
+    }
+}
+
+
+@mixin buttons {
+    margin: 5px 12px;
+    position: absolute;
+    left: 449px;
+    top: 365px;  
+    background-color: variables.$text-color;
+    height: 210px;
+    width:200px;
+    
+    .btn__left, .btn__right {
+        display: block;
+        position: relative;
+        left: 50%;
+        width: 60px;
+        height: 60px;
+        border: variables.$border-primary;
+        border-radius: 5px;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+        &:hover {
+            cursor: pointer;
+            border-color: variables.$border-color;
+        }
+    }
+}

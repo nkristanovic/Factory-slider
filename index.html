@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./scss/style.css">
     <title>Factory slider</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
@@ -26,40 +26,95 @@
             <div class="content">
                 <div class="content__slider">
                     <div class="content__slider-firstRow">
-                        <div class="slide">
+                        <div class="content__slide">
                             <img src="Assets/slider-image-11.png" alt="slider-image-11" class="content__image">
                         </div>
-                        <div class="slide">
+                        <div class="content__slide">
                             <img src="Assets/slider-image-7.jpg" alt="slider-image-7" class="content__image">
                         </div>
-                        <div class="slide">
+                        <div class="content__slide">
+                            <img src="Assets/slider-image-11.png" alt="slider-image-11" class="content__image">
+                        </div>
+                        <div class="content__slide">
                             <img src="Assets/slider-image-6.jpg" alt="slider-image-6" class="content__image">
                         </div>
-                        <div class="slide">
+                        <div class="content__slide">
                             <img src="Assets/slider-image-9.jpg" alt="slider-image-9" class="content__image">
                         </div>
-                        <div class="slide">
+                        <div class="content__slide">
                             <img src="Assets/slider-image-8.jpg" alt="slider-image-8" class="content__image">
                         </div>
-                        <div class="slide">
+                        <div class="content__slide">
                             <img src="Assets/slider-image-5.jpg" alt="slider-image-5" class="content__image">
+                        </div>
+                        <div class="content__slide">
+                            <img src="Assets/slider-image-6.jpg" alt="slider-image-6" class="content__image">
+                        </div>
+                        <div class="content__slide">
+                            <img src="Assets/slider-image-11.png" alt="slider-image-11" class="content__image">
+                        </div>
+                        <div class="content__slide">
+                            <img src="Assets/slider-image-7.jpg" alt="slider-image-7" class="content__image">
+                        </div>
+
+                        <div class="content__slide">
+                            <img src="Assets/slider-image-6.jpg" alt="slider-image-6" class="content__image">
+                        </div>
+                        <div class="content__slide">
+                            <img src="Assets/slider-image-9.jpg" alt="slider-image-9" class="content__image">
+                        </div>
+                        <div class="content__slide">
+                            <img src="Assets/slider-image-8.jpg" alt="slider-image-8" class="content__image">
+                        </div>
+                        <div class="content__slide">
+                            <img src="Assets/slider-image-5.jpg" alt="slider-image-5" class="content__image">
+                        </div>
+                        <div class="content__slide">
+                            <img src="Assets/slider-image-6.jpg" alt="slider-image-6" class="content__image">
                         </div>
                     </div>
                     <div class="content__slider-secondRow">
-                        <div class="slide">
+                        <div class="content__slide">
                             <img src="Assets/slider-image-10.png" alt="slider-image-10" class="content__image">
                         </div>
-                        <div class="slide">
+                        <div class="content__slide">
                             <img src="Assets/slider-image-4.jpg" alt="slider-image-4" class="content__image">
                         </div>
-                        <div class="slide">
+                        <div class="content__slide">
+                            <img src="Assets/slider-image-10.png" alt="slider-image-10" class="content__image">
+                        </div>
+                        <div class="content__slide">
                             <img src="Assets/slider-image-1.jpg" alt="slider-image-1" class="content__image">
                         </div>
-                        <div class="slide">
+                        <div class="content__slide">
                             <img src="Assets/slider-image-2.jpg" alt="slider-image-2" class="content__image">
                         </div>
-                        <div class="slide">
+                        <div class="content__slide">
                             <img src="Assets/slider-image-3.jpg" alt="slider-image-3" class="content__image">
+                        </div>
+                        <div class="content__slide">
+                            <img src="Assets/slider-image-10.png" alt="slider-image-10" class="content__image">
+                        </div>
+                        <div class="content__slide">
+                            <img src="Assets/slider-image-10.png" alt="slider-image-10" class="content__image">
+                        </div>
+                        <div class="content__slide">
+                            <img src="Assets/slider-image-4.jpg" alt="slider-image-4" class="content__image">
+                        </div>
+                        <div class="content__slide">
+                            <img src="Assets/slider-image-10.png" alt="slider-image-10" class="content__image">
+                        </div>
+                        <div class="content__slide">
+                            <img src="Assets/slider-image-1.jpg" alt="slider-image-1" class="content__image">
+                        </div>
+                        <div class="content__slide">
+                            <img src="Assets/slider-image-2.jpg" alt="slider-image-2" class="content__image">
+                        </div>
+                        <div class="content__slide">
+                            <img src="Assets/slider-image-3.jpg" alt="slider-image-3" class="content__image">
+                        </div>
+                        <div class="content__slide">
+                            <img src="Assets/slider-image-10.png" alt="slider-image-10" class="content__image">
                         </div>
                     </div>
                 </div>
@@ -71,19 +126,15 @@
                 </div>
             </div>
             <div class="btn" class="disabled">
-                <div class="btn__left" id="prev">
-                    <button> </button>
-                </div>
-                <div class="btn__right" id="next">
-                    <button></button>
-                </div>
+                <button class="btn__left" id="prev"></button>
+                <button class="btn__right" id="next"></button>
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="footer__description">Skup drugih elemenata na stranici</div>
     </footer>
-    <script src="script.js"></script>
+    <script src="./js/script_babel.js" defer></script>
 </body>
 
 </html>
